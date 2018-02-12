@@ -17,5 +17,4 @@ def decrypt(s):
     
     s_unhexified = binascii.unhexlify(bytes(s, "utf-8"))
     
-    
     return output
