@@ -15,8 +15,7 @@ def encrypt(s):
 def decrypt(s):
     output = ""
     
-    r = binascii.unhexlify(bytes(s, "utf-8"))
+    s_unhexified = binascii.unhexlify(bytes(s, "utf-8"))
     
-    for i, c in enumerate(s):
-        r += chr(ord(c) ^ ((i * ord(key[i % len(key)])) % 256))
+    
     return output
